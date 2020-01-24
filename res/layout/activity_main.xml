@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fore"		
+	android:scaleType = "centerCrop"
+    tools:context="com.example.pdfreader.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Read/Write PDF for BLIND"
+        android:background="#6A6A68"
+        android:textColor="#EDEEE2"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:hint="File Name TO Write" />
+
+    <EditText
+        android:id="@+id/ftext"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:layout_above="@+id/browse"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_below="@+id/fname"
+        android:background="#F3FF9F"
+        android:gravity="top"
+        android:ems="10"
+        android:hint="File Content" />
+
+    <Button
+        android:id="@+id/btnwrite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnread"
+        android:layout_alignParentBottom="true"
+        android:background="#FE5555"
+        android:text="Write File"
+        android:textColor="#EEFFF2" />
+
+    <Button
+        android:id="@+id/btnread"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnwrite"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:background="#2BC249"
+        android:text="Read File"
+        android:textColor="#EEFFF2" />
+
+    <Button
+        android:id="@+id/browse"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnread"
+        android:layout_alignParentRight="true"
+        android:text="Browse" />
+
+    <EditText
+        android:id="@+id/fnameread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/browse"
+        android:layout_alignLeft="@+id/btnread"
+        android:layout_toLeftOf="@+id/browse"
+        android:ems="10"
+        android:hint="File Name TO Read" />
+
+</RelativeLayout>

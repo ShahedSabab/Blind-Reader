@@ -1,0 +1,6 @@
+
+<resources>
+    <style name="CustomTheme" parent="android:Theme">
+     <item name="android:windowTitleSize">35dip</item>
+    </style>
+</resources>
