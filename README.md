@@ -5,5 +5,7 @@ A pdf reader that allows a blind person to read documents. The concept is to use
 • The smart feature - dynamic scrolling leverages the phone gyroscope reading and can detect tilt. Based on the tilt angle it triggers the scrolling. <br/>
 • The app facilitates different functionalities based on single tap, double tap (speak out line number), longer tap (speak out the name of the directory, setting options) on the screen.<br/>
 
+Publication Source: [Check the publication](https://ieeexplore.ieee.org/abstract/document/7860200)
+
 # How to Run
 Go to bin/ pdfReader.apk and intall it in your android smart phone. 
